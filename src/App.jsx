@@ -3,11 +3,12 @@ import { Route, Switch } from 'react-router-dom';
 
 import HomePage from './pages/home/homepage.component';
 import ShopPage from './pages/shop/shop.component';
-import SignInAndSignUp from './pages/sign-in-sign-up/sign-in-sing-up';
 import Header from './components/header/header.component';
+import SignInAndSignUp from './pages/sign-in-sign-up/sign-in-sing-up';
+
+import { auth } from './firebase/firebase.utils';
 
 import './App.css';
-import { auth } from './firebase/firebase.utils';
 
 class App extends Component {
   constructor() {
