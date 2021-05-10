@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import CustomButton from '../custom-button/custom-button.component';
-import { FormInput } from '../form-input/form-input.component';
+import CustomButton from "../custom-button/custom-button.component";
+import FormInput from "../form-input/form-input.component";
 
-import { signInWithGoogle } from '../../firebase/firebase.utils';
+import { signInWithGoogle } from "../../firebase/firebase.utils";
 
-import './sign-in.styles.scss';
+import "./sign-in.styles.scss";
 
 class SignIn extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     };
   }
 
@@ -21,8 +21,8 @@ class SignIn extends React.Component {
     event.preventDefault();
 
     this.setState({
-      email: '',
-      password: '',
+      email: "",
+      password: "",
     });
   };
 
@@ -33,28 +33,28 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <div className='sign-in'>
+      <div className="sign-in">
         <h2>I already have an acount</h2>
         <span>Sing in with your email and password</span>
         <form onSubmit={this.handleSubmit}>
           <FormInput
-            type='email'
-            name='email'
+            type="email"
+            name="email"
             handleChange={this.handleChange}
             value={this.state.email}
-            label='email'
+            label="email"
             required
           />
           <FormInput
-            type='password'
-            name='password'
+            type="password"
+            name="password"
             value={this.state.password}
             handleChange={this.handleChange}
-            label='password'
+            label="password"
             required
           />
-          <div className='buttons'>
-            <CustomButton type='submit'>Sign in</CustomButton>
+          <div className="buttons">
+            <CustomButton type="submit">Sign in</CustomButton>
             <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
               Sign in with Google
             </CustomButton>
