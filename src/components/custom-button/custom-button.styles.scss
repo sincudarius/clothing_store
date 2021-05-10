@@ -13,11 +13,8 @@
   font-weight: bolder;
   border: none;
   cursor: pointer;
-<<<<<<< HEAD
-=======
   display: flex;
   justify-content: center;
->>>>>>> 3d660ee88ef85ed7c5824815f8d94007d719d136
 
   &:hover {
     background-color: white;
@@ -27,19 +24,13 @@
 
   &.google-sign-in {
     background-color: #4285f4;
-<<<<<<< HEAD
-    color: #fff;
-=======
     color: white;
->>>>>>> 3d660ee88ef85ed7c5824815f8d94007d719d136
 
     &:hover {
       background-color: #357ae8;
       border: none;
     }
   }
-<<<<<<< HEAD
-=======
 
   &.inverted {
     background-color: white;
@@ -52,5 +43,4 @@
       border: none;
     }
   }
->>>>>>> 3d660ee88ef85ed7c5824815f8d94007d719d136
 }
