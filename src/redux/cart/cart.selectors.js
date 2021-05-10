@@ -16,7 +16,6 @@ export const selectCartItemsCount = createSelector(
   [selectCartItems],
   cartItems => cartItems?.reduce((accumulator, cartItem) => {
     //here is some bug the accumulator return Nan in some cases
-    console.log(cartItem);
     return accumulator + cartItem.quantity;
   }, 0),
 )

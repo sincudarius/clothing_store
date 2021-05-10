@@ -26,7 +26,6 @@ const CheckoutPage = ({ cartItems, total }) => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
     <div className="total">
-      {console.log(total)}
       <span>TOTAL: ${total}</span>
     </div>
   </div>
